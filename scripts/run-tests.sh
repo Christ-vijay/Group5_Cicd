@@ -27,4 +27,9 @@ if ! grep -q "March 17, 2026" myapp/index.html; then
   exit 1
 fi
 
+if ! grep -q "<title>" myapp/index.html; then
+  echo "ERROR: <title> tag is not found in the index.html page" >&2
+  exit 1
+fi
+
 echo "All required files are present and date check passed."
