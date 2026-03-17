@@ -22,7 +22,7 @@ if [[ ! -f "myapp/script.js" ]]; then
   exit 1
 fi
 
-if ! grep -Eq "[A-Za-z]+ [0-9]{1,2}, [0-9]{4}" myapp/index.html; then
+if ! grep -q "March 17, 2026" myapp/index.html; then
   echo "ERROR: Today's date not found in index.html." >&2
   exit 1
 fi
