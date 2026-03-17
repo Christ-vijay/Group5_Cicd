@@ -27,4 +27,10 @@ if ! grep -q "March 17, 2026" myapp/index.html; then
   exit 1
 fi
 
+# Check if my name exists in index.html or not...
+if ! grep -q "Teena Thomas" myapp/index.html; then
+  echo "Test failed: Student name not found in index.html"
+  exit 1
+fi
+
 echo "All required files are present and date check passed."
