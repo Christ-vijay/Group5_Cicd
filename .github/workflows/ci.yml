@@ -2,7 +2,7 @@ name: CI
 
 on:
   push:
-    branches: [ cicd-prod ]
+    branches: [ Feature_ChristVijaySoosaiMarian ]
   pull_request:
     branches: [ cicd-prod ]
 
